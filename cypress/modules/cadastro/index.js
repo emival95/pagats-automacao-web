@@ -2,7 +2,7 @@ import { faker } from '@faker-js/faker';
 class Cadastro {
 
     preencherFormularioDePreCadastroCompleto(){
-        cy.get('#id_gender1').check()
+        cy.get('#id_gender1', { timeout: 10000 }).should('be.visible').check()
 
         // cy.get('input[type=radio]').check('Mrs')
 

@@ -18,7 +18,7 @@ describe('Drag and Drop and Window Handling Tests', () => {
 
     })
 
-    it.only('Drag and Drop', () =>{
+    it('Drag and Drop', () =>{
 
         cy.visit('https://the-internet.herokuapp.com/drag_and_drop')
 

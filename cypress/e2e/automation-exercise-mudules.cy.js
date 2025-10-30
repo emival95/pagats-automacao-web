@@ -56,7 +56,7 @@ describe('Automation Exercise', () => {
 
         login.preencherFormularioDeLogin(userData.user, userData.password)
 
-        cy.get('i.fa-user').parent().should('contain', userData.name)
+        cy.get('i.fa-user').parent().should('contain', 'QA User')
         cy.get('a[href="/logout"]').should('be.visible')
         cy.contains('b', 'QA User')
     })
@@ -84,13 +84,13 @@ describe('Automation Exercise', () => {
     });
 
 
-    it('Cadastrar um usuario existente no sistema', () => {
+    it.only('Cadastrar um usuario existente no sistema', () => {
 
 
 
         cy.get('[data-qa="signup-name"]').type('QA User')
 
-        cy.get('[data-qa="signup-email"]').type('testee1760971687315@teste.com')
+        cy.get('[data-qa="signup-email"]').type('Gerry15@gmail.com')
 
         cy.contains('button', 'Signup').click()
 

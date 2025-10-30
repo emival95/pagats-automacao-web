@@ -6,7 +6,7 @@ class Cadastro {
 
         // cy.get('input[type=radio]').check('Mrs')
 
-        cy.get('#password').type('teste1234', { log: false })
+        cy.get('#password').type('teste1234')
 
 
         // para comboboxe com select

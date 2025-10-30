@@ -97,7 +97,7 @@ describe('Automation Exercise', () => {
     it('Login de usaurio existentes', () => {
 
 
-        cy.get('[data-qa="login-email"]').type('testee1760971687315@teste.com')
+        cy.get('[data-qa="login-email"]').type('Gerry15@gmail.com')
         cy.get('[data-qa="login-password"]').type('teste1234', { log: false })
         cy.get('[data-qa="login-button"]').click()
 
@@ -110,7 +110,7 @@ describe('Automation Exercise', () => {
 
 
 
-        cy.get('[data-qa="login-email"]').type('testee1760971687315@teste.com')
+        cy.get('[data-qa="login-email"]').type('Gerry15@gmail.com')
         cy.get('[data-qa="login-password"]').type('54321', { log: false })
         cy.get('[data-qa="login-button"]').click()
 
@@ -127,7 +127,7 @@ describe('Automation Exercise', () => {
 
 
 
-        cy.get('[data-qa="login-email"]').type('testee1760971687315@teste.com')
+        cy.get('[data-qa="login-email"]').type('Gerry15@gmail.com')
         cy.get('[data-qa="login-password"]').type('teste1234', { log: false })
 
         cy.get('[data-qa="login-button"]').click()
@@ -144,7 +144,7 @@ describe('Automation Exercise', () => {
 
         cy.get('[data-qa="signup-name"]').type('QA User')
 
-        cy.get('[data-qa="signup-email"]').type('testee1760971687315@teste.com')
+        cy.get('[data-qa="signup-email"]').type('Gerry15@gmail.com')
 
         cy.contains('button', 'Signup').click()
 

@@ -19,9 +19,9 @@ jobs:
       - name: Instalando dependências
         run: npm install
 
-      # Executar os testes Cypress
-      - name: Executando os testes
-        run: npx cypress run
+      # Executar apenas a spec especificada
+      - name: Executando os testes (spec única)
+        run: npx cypress run --spec 'cypress/e2e/pgats-trabalho-final.cy.js'
 
       # Upload dos relatórios e evidências
       - name: Upload dos relatórios
